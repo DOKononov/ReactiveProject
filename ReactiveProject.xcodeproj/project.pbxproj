@@ -24,6 +24,7 @@
 		5606097F2CEF4B7E00A6E3F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5606097E2CEF4B7E00A6E3F5 /* SnapKit */; };
 		560609812CEF532200A6E3F5 /* RxColdPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609802CEF532200A6E3F5 /* RxColdPublisher.swift */; };
 		560609832CEF538600A6E3F5 /* RxValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609822CEF538600A6E3F5 /* RxValuePublisher.swift */; };
+		560609852CEF734C00A6E3F5 /* RxNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		5606097B2CEF490700A6E3F5 /* RxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxButton.swift; sourceTree = "<group>"; };
 		560609802CEF532200A6E3F5 /* RxColdPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxColdPublisher.swift; sourceTree = "<group>"; };
 		560609822CEF538600A6E3F5 /* RxValuePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxValuePublisher.swift; sourceTree = "<group>"; };
+		560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +140,10 @@
 			children = (
 				560609712CEF268100A6E3F5 /* RxPublisher.swift */,
 				560609752CEF3B8B00A6E3F5 /* RxReleasable.swift */,
+				560609772CEF3BD100A6E3F5 /* RxClosure.swift */,
 				560609802CEF532200A6E3F5 /* RxColdPublisher.swift */,
 				560609822CEF538600A6E3F5 /* RxValuePublisher.swift */,
-				560609772CEF3BD100A6E3F5 /* RxClosure.swift */,
+				560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				560609762CEF3B8B00A6E3F5 /* RxReleasable.swift in Sources */,
 				560609722CEF268100A6E3F5 /* RxPublisher.swift in Sources */,
+				560609852CEF734C00A6E3F5 /* RxNotificationCenter.swift in Sources */,
 				560609782CEF3BD100A6E3F5 /* RxClosure.swift in Sources */,
 				560609812CEF532200A6E3F5 /* RxColdPublisher.swift in Sources */,
 				560609832CEF538600A6E3F5 /* RxValuePublisher.swift in Sources */,

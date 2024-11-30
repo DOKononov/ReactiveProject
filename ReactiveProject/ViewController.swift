@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     
     private func bind() {
         service.intDidSpawn
+            .filter { $0 > .zero }
             .subscribe { print($0) }
             .store(in: &bag)
         rxButton.onTouchUpInside
