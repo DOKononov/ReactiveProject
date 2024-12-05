@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		5606094C2CEF225800A6E3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606094B2CEF225800A6E3F5 /* AppDelegate.swift */; };
 		5606094E2CEF225800A6E3F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606094D2CEF225800A6E3F5 /* SceneDelegate.swift */; };
-		560609502CEF225800A6E3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606094F2CEF225800A6E3F5 /* ViewController.swift */; };
-		560609532CEF225800A6E3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560609512CEF225800A6E3F5 /* Main.storyboard */; };
 		560609552CEF225900A6E3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560609542CEF225900A6E3F5 /* Assets.xcassets */; };
 		560609582CEF225900A6E3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560609562CEF225900A6E3F5 /* LaunchScreen.storyboard */; };
 		560609672CEF23F500A6E3F5 /* DIYReactive.h in Headers */ = {isa = PBXBuildFile; fileRef = 560609662CEF23F500A6E3F5 /* DIYReactive.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +23,15 @@
 		560609812CEF532200A6E3F5 /* RxColdPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609802CEF532200A6E3F5 /* RxColdPublisher.swift */; };
 		560609832CEF538600A6E3F5 /* RxValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609822CEF538600A6E3F5 /* RxValuePublisher.swift */; };
 		560609852CEF734C00A6E3F5 /* RxNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */; };
+		56278D492D00888000FB80BE /* RxResultPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56278D482D00888000FB80BE /* RxResultPublisher.swift */; };
+		563F908C2D018DE400254761 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908B2D018DE400254761 /* Container.swift */; };
+		563F908E2D018F6600254761 /* DIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908D2D018F6600254761 /* DIConfigurator.swift */; };
+		563F90902D0196BA00254761 /* MainNetworkServiceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908F2D0196BA00254761 /* MainNetworkServiceUseCase.swift */; };
+		56C2A3902D002B3E00E20A2B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A38F2D002B3E00E20A2B /* MainVC.swift */; };
+		56C2A3922D00364400E20A2B /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3912D00364400E20A2B /* MainVM.swift */; };
+		56C2A3942D00369100E20A2B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3932D00369100E20A2B /* NetworkService.swift */; };
+		56C2A3972D0036C700E20A2B /* CatFactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3962D0036C700E20A2B /* CatFactModel.swift */; };
+		56C2A39A2D00399C00E20A2B /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3992D00399C00E20A2B /* MainAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +62,6 @@
 		560609482CEF225800A6E3F5 /* ReactiveProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5606094B2CEF225800A6E3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5606094D2CEF225800A6E3F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5606094F2CEF225800A6E3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		560609522CEF225800A6E3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		560609542CEF225900A6E3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560609572CEF225900A6E3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560609592CEF225900A6E3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +75,15 @@
 		560609802CEF532200A6E3F5 /* RxColdPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxColdPublisher.swift; sourceTree = "<group>"; };
 		560609822CEF538600A6E3F5 /* RxValuePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxValuePublisher.swift; sourceTree = "<group>"; };
 		560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNotificationCenter.swift; sourceTree = "<group>"; };
+		56278D482D00888000FB80BE /* RxResultPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxResultPublisher.swift; sourceTree = "<group>"; };
+		563F908B2D018DE400254761 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		563F908D2D018F6600254761 /* DIConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConfigurator.swift; sourceTree = "<group>"; };
+		563F908F2D0196BA00254761 /* MainNetworkServiceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkServiceUseCase.swift; sourceTree = "<group>"; };
+		56C2A38F2D002B3E00E20A2B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		56C2A3912D00364400E20A2B /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		56C2A3932D00369100E20A2B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		56C2A3962D0036C700E20A2B /* CatFactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactModel.swift; sourceTree = "<group>"; };
+		56C2A3992D00399C00E20A2B /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +127,11 @@
 		5606094A2CEF225800A6E3F5 /* ReactiveProject */ = {
 			isa = PBXGroup;
 			children = (
-				5606094B2CEF225800A6E3F5 /* AppDelegate.swift */,
-				5606094D2CEF225800A6E3F5 /* SceneDelegate.swift */,
-				5606094F2CEF225800A6E3F5 /* ViewController.swift */,
+				56C2A3982D0038CD00E20A2B /* App */,
+				56C2A38D2D002B2700E20A2B /* Modules */,
 				560609792CEF3D9400A6E3F5 /* Services */,
-				560609512CEF225800A6E3F5 /* Main.storyboard */,
 				560609542CEF225900A6E3F5 /* Assets.xcassets */,
 				560609562CEF225900A6E3F5 /* LaunchScreen.storyboard */,
-				560609592CEF225900A6E3F5 /* Info.plist */,
 			);
 			path = ReactiveProject;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 				560609712CEF268100A6E3F5 /* RxPublisher.swift */,
 				560609752CEF3B8B00A6E3F5 /* RxReleasable.swift */,
 				560609772CEF3BD100A6E3F5 /* RxClosure.swift */,
+				56278D482D00888000FB80BE /* RxResultPublisher.swift */,
 				560609802CEF532200A6E3F5 /* RxColdPublisher.swift */,
 				560609822CEF538600A6E3F5 /* RxValuePublisher.swift */,
 				560609842CEF734C00A6E3F5 /* RxNotificationCenter.swift */,
@@ -151,7 +163,9 @@
 		560609792CEF3D9400A6E3F5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				563F908A2D018DD600254761 /* DI */,
 				560609732CEF293E00A6E3F5 /* IntSpawner.swift */,
+				56C2A3952D00369B00E20A2B /* NetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +176,61 @@
 				5606097B2CEF490700A6E3F5 /* RxButton.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		563F908A2D018DD600254761 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				563F908B2D018DE400254761 /* Container.swift */,
+				563F908D2D018F6600254761 /* DIConfigurator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		563F90912D0196C600254761 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				563F908F2D0196BA00254761 /* MainNetworkServiceUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		56C2A38D2D002B2700E20A2B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				56C2A38E2D002B3300E20A2B /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		56C2A38E2D002B3300E20A2B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				563F90912D0196C600254761 /* UseCase */,
+				56C2A3992D00399C00E20A2B /* MainAssembler.swift */,
+				56C2A38F2D002B3E00E20A2B /* MainVC.swift */,
+				56C2A3912D00364400E20A2B /* MainVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		56C2A3952D00369B00E20A2B /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				56C2A3932D00369100E20A2B /* NetworkService.swift */,
+				56C2A3962D0036C700E20A2B /* CatFactModel.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		56C2A3982D0038CD00E20A2B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				560609592CEF225900A6E3F5 /* Info.plist */,
+				5606094B2CEF225800A6E3F5 /* AppDelegate.swift */,
+				5606094D2CEF225800A6E3F5 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +335,6 @@
 			files = (
 				560609582CEF225900A6E3F5 /* LaunchScreen.storyboard in Resources */,
 				560609552CEF225900A6E3F5 /* Assets.xcassets in Resources */,
-				560609532CEF225800A6E3F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +352,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560609502CEF225800A6E3F5 /* ViewController.swift in Sources */,
 				5606094C2CEF225800A6E3F5 /* AppDelegate.swift in Sources */,
+				56C2A39A2D00399C00E20A2B /* MainAssembler.swift in Sources */,
+				56C2A3922D00364400E20A2B /* MainVM.swift in Sources */,
+				563F908E2D018F6600254761 /* DIConfigurator.swift in Sources */,
+				56C2A3902D002B3E00E20A2B /* MainVC.swift in Sources */,
 				560609742CEF293E00A6E3F5 /* IntSpawner.swift in Sources */,
+				56C2A3942D00369100E20A2B /* NetworkService.swift in Sources */,
 				5606094E2CEF225800A6E3F5 /* SceneDelegate.swift in Sources */,
+				563F908C2D018DE400254761 /* Container.swift in Sources */,
+				563F90902D0196BA00254761 /* MainNetworkServiceUseCase.swift in Sources */,
+				56C2A3972D0036C700E20A2B /* CatFactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				560609762CEF3B8B00A6E3F5 /* RxReleasable.swift in Sources */,
+				56278D492D00888000FB80BE /* RxResultPublisher.swift in Sources */,
 				560609722CEF268100A6E3F5 /* RxPublisher.swift in Sources */,
 				560609852CEF734C00A6E3F5 /* RxNotificationCenter.swift in Sources */,
 				560609782CEF3BD100A6E3F5 /* RxClosure.swift in Sources */,
@@ -316,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		560609512CEF225800A6E3F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				560609522CEF225800A6E3F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		560609562CEF225900A6E3F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -464,10 +532,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CK7G8B5AC6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReactiveProject/Info.plist;
+				INFOPLIST_FILE = ReactiveProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,10 +560,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CK7G8B5AC6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReactiveProject/Info.plist;
+				INFOPLIST_FILE = ReactiveProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

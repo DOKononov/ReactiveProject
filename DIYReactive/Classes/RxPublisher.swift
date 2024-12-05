@@ -28,10 +28,37 @@ public class RxPublisher<T: Any> {
         }
     }
     
+    public func subscribeOn(_ publisher: RxPublisher<T>) -> RxReleasable {
+        return self.subscribe { publisher.send(event: $0)}
+    }
+    
+    public func subscribe(
+        onSuccess: @escaping (T) -> Void,
+        onError: @escaping (Error) -> Void
+    ) -> RxReleasable {
+        let closure = RxClosure(body: onSuccess, errorBody: onError)
+        subscribers.append(closure)
+        
+        return RxReleasable { [weak self] in
+            self?.subscribers.removeAll(where: { closure == $0 })
+        }
+    }
+    
     public func send(event: T) {
         subscribers.forEach { $0.body(event) }
     }
     
+    public func send(final event: T) {
+        send(event: event)
+        subscribers.removeAll()
+    }
+    
+    public func send(error: Error) {
+        subscribers.forEach { $0.errorBody?(error) }
+        subscribers.removeAll()
+    }
+    
+
     public func filter(_ handler: @escaping (T) -> Bool) -> RxPublisher<T> {
         let filteredPublisher = RxPublisher<T>()
         self.subscribe { event in
@@ -65,9 +92,10 @@ public class RxPublisher<T: Any> {
             return mergePublisher
         }
 
-    public func observOn(_ queue: DispatchQueue, type: QueueType) -> RxPublisher<T> {
+    public func observOn(_ queue: DispatchQueue, type: QueueType = .async) -> RxPublisher<T> {
         let queuePublisher = RxPublisher<T>()
-        queuePublisher.subscribe { event in
+        
+        self.subscribe { event in
             switch type {
             case .async:
                 queue.async {
@@ -78,7 +106,17 @@ public class RxPublisher<T: Any> {
                     queuePublisher.send(event: event)
                 }
             }
-
+        } onError: { error in
+            switch type {
+            case .async:
+                queue.async {
+                    queuePublisher.send(error: error)
+                }
+            case .sync:
+                queue.sync {
+                    queuePublisher.send(error: error)
+                }
+            }
         }.store(in: &bag)
         return queuePublisher
     }
