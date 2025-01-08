@@ -27,6 +27,7 @@
 		563F908C2D018DE400254761 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908B2D018DE400254761 /* Container.swift */; };
 		563F908E2D018F6600254761 /* DIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908D2D018F6600254761 /* DIConfigurator.swift */; };
 		563F90902D0196BA00254761 /* MainNetworkServiceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F908F2D0196BA00254761 /* MainNetworkServiceUseCase.swift */; };
+		5643152A2D27FA1B00F57ACD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564315292D27FA1B00F57ACD /* MainRouter.swift */; };
 		56C2A3902D002B3E00E20A2B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A38F2D002B3E00E20A2B /* MainVC.swift */; };
 		56C2A3922D00364400E20A2B /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3912D00364400E20A2B /* MainVM.swift */; };
 		56C2A3942D00369100E20A2B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A3932D00369100E20A2B /* NetworkService.swift */; };
@@ -79,6 +80,7 @@
 		563F908B2D018DE400254761 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		563F908D2D018F6600254761 /* DIConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConfigurator.swift; sourceTree = "<group>"; };
 		563F908F2D0196BA00254761 /* MainNetworkServiceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkServiceUseCase.swift; sourceTree = "<group>"; };
+		564315292D27FA1B00F57ACD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		56C2A38F2D002B3E00E20A2B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		56C2A3912D00364400E20A2B /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		56C2A3932D00369100E20A2B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				56C2A3992D00399C00E20A2B /* MainAssembler.swift */,
 				56C2A38F2D002B3E00E20A2B /* MainVC.swift */,
 				56C2A3912D00364400E20A2B /* MainVM.swift */,
+				564315292D27FA1B00F57ACD /* MainRouter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				56C2A3922D00364400E20A2B /* MainVM.swift in Sources */,
 				563F908E2D018F6600254761 /* DIConfigurator.swift in Sources */,
 				56C2A3902D002B3E00E20A2B /* MainVC.swift in Sources */,
+				5643152A2D27FA1B00F57ACD /* MainRouter.swift in Sources */,
 				560609742CEF293E00A6E3F5 /* IntSpawner.swift in Sources */,
 				56C2A3942D00369100E20A2B /* NetworkService.swift in Sources */,
 				5606094E2CEF225800A6E3F5 /* SceneDelegate.swift in Sources */,

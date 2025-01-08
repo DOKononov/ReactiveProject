@@ -11,8 +11,10 @@ final class MainAssembler {
     private init() {}
     
     static func make(container: Container) -> UIViewController {
-        let vm = MainVM(networkService: MainNetworkServiceUseCase(networkService: container.resolve()))
+        let router = MainRouter(container: container)
+        let vm = MainVM(networkService: MainNetworkServiceUseCase(networkService: container.resolve()), router: router)
         let vc = MainVC(viewModel: vm)
+        router.root = vc
         return vc
     }
 }

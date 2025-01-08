@@ -12,6 +12,11 @@ protocol MainNetworkServiceProtocol {
     func getRandomFact() -> RxPublisher<String>
 }
 
+protocol MainRouterProtocol {
+    func openAlert(message: String)
+    func openBreedListModule()
+}
+
 
 final class MainVM: MainViewModelProtocol {
     //In
@@ -22,8 +27,13 @@ final class MainVM: MainViewModelProtocol {
     private let networkService: MainNetworkServiceProtocol
     private var bag: [RxReleasable] = []
     
-    init(networkService: MainNetworkServiceProtocol) {
+    private let router: MainRouterProtocol
+    
+    init(networkService: MainNetworkServiceProtocol, 
+         router: MainRouterProtocol
+    ) {
         self.networkService = networkService
+        self.router = router
         bind()
     }
     
